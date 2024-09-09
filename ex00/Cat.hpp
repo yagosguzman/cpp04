@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:27:50 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/09 21:28:42 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/09 21:30:42 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,9 @@
 
 class Cat : public Animal
 {
-private:
-	/* data */
-public:
-	Cat();
-	~Cat();
+	public:
+		Cat();
+		~Cat();
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:18:52 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/09 21:23:36 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/09 21:38:26 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,16 @@
 Animal::Animal()
 {
 	_type = "Unknown";
-	std::cout << "Default Animal constructor called" << std::endl;
+	std::cout << "Default constructor called" << std::endl;
+}
+
+Animal::Animal(std::string type)
+{
+	if (!type.empty())
+		_type = type;
+	else
+		_type = "Unknown";
+	std::cout << "Default Animal constructor called, type is " << _type << std::endl;
 }
 
 Animal::~Animal()
@@ -29,6 +38,6 @@ void	Animal::makeSound(void)
 		std::cout << "MEOOOOOWWWW" << std::endl;
 	else if (_type == "Dog")
 		std::cout << "WOOOF WOOOOF" << std::endl;
-	else if (_type == "Unknown")
+	else
 		std::cout << "*Unrecognizable sound*" << std::endl;
 }

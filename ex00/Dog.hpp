@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:25:29 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/09 21:27:15 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/09 21:30:27 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,9 @@
 
 class Dog : public Animal
 {
-private:
-	/* data */
-public:
-	Dog(/* args */);
-	~Dog();
+	public:
+		Dog(/* args */);
+		~Dog();
 };
 
 #endif

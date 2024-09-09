@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:16:48 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/09 21:19:24 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/09 21:34:42 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ class Animal
 protected:
 	std::string _type;
 public:
-	Animal(/* args */);
+	Animal();
+	Animal(std::string type);
 	~Animal();
 	void	makeSound();
 };
