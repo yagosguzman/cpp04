@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/09 21:16:48 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/10 19:23:27 by ysanchez         ###   ########.fr       */
+/*   Created: 2024/09/10 19:19:42 by ysanchez          #+#    #+#             */
+/*   Updated: 2024/09/10 19:58:47 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-# define ANIMAL_HPP
+#include "Animal.hpp"
+#include "Cat.hpp"
 
-#include <iostream>
-
-class Animal
+Cat::Cat() : Animal("Cat"), Brain()
 {
-protected:
-	std::string _type;
-public:
-	Animal();
-	Animal(std::string type);
-	~Animal();
-	std::string	getType() const;
-	void		makeSound() const;
-};
+	this->_brain = &Brain();
+	std::cout << "Cat default constructor called" << std::endl;
+}
 
-#endif
+
+Cat::~Cat()
+{
+	std::cout << "Cat destructor called" << std::endl;
+}
