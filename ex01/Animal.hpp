@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:16:48 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/10 19:23:27 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/23 19:57:34 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,12 @@ protected:
 	std::string _type;
 public:
 	Animal();
+	Animal(Animal& copy);
 	Animal(std::string type);
 	~Animal();
+
+	Animal& operator=(const Animal& src);
+
 	std::string	getType() const;
 	void		makeSound() const;
 };

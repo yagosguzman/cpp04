@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:27:50 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/09 21:30:42 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/23 19:55:28 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,18 @@
 # define CAT_HPP
 
 #include "Animal.hpp"
+#include "Brain.hpp"
 
-class Cat : public Animal
+class Cat : public Animal, public Brain
 {
+	private:
+		Brain *_brain;
 	public:
 		Cat();
+		Cat(Cat &copy);
 		~Cat();
+
+		Cat& operator=(const Cat& src);
 };
 
 #endif

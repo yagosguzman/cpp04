@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:25:29 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/09 21:30:27 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/23 19:55:00 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,19 @@
 # define DOG_HPP
 
 #include "Animal.hpp"
+#include "Brain.hpp"
 
-class Dog : public Animal
+class Dog : public Animal, public Brain
 {
+	private:
+		Brain *_brain;
+
 	public:
-		Dog(/* args */);
+		Dog();
+		Dog(Dog &copy);
 		~Dog();
+
+		Dog& operator=(const Dog& src);
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:27:50 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/10 19:57:40 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/23 19:55:28 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,10 @@ class Cat : public Animal, public Brain
 		Brain *_brain;
 	public:
 		Cat();
+		Cat(Cat &copy);
 		~Cat();
+
+		Cat& operator=(const Cat& src);
 };
 
 #endif
