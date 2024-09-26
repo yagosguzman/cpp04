@@ -17,6 +17,12 @@ Brain::Brain()
 	std::cout << "Brain default constructor called" << std::endl;
 }
 
+Brain::Brain(Brain &copy)
+{
+	std::cout << "Brain copy constructor called" << std::endl;
+	_ideas[100] = copy._ideas[100];
+}
+
 Brain::~Brain()
 {
 	std::cout << "Brain destructor called" << std::endl;

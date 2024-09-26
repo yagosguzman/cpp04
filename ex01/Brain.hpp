@@ -13,18 +13,22 @@
 #ifndef BRAIN_HPP
 # define BRAIN_HPP
 
-#include "Animal.hpp"
+# include <iostream>
 
 class Brain
 {
 protected:
 	std::string _ideas[100];
+
 public:
 	Brain();
 	Brain(Brain &copy);
 	~Brain();
 
 	Brain& operator=(const Brain& src);
+
+	void	writeIdeas(int n, std::string idea);
+	void	printIdeas(int n);
 };
 
 #endif

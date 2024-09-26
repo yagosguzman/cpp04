@@ -13,13 +13,15 @@
 #ifndef CAT_HPP
 # define CAT_HPP
 
-#include "Animal.hpp"
-#include "Brain.hpp"
+# include <iostream>
+# include "Animal.hpp"
+# include "Brain.hpp"
 
 class Cat : public Animal, public Brain
 {
 	private:
 		Brain *_brain;
+
 	public:
 		Cat();
 		Cat(Cat &copy);
