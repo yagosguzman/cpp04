@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:24:35 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/27 22:40:49 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/27 22:52:48 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,8 @@ int main()
 	std::cout << std::endl;
 	delete wrong;
 	delete wrongcat;
+	WrongCat badcat;
+	badcat.makeSound(); // Here it will make the Wrong Meow because it's not instantiated as a wrong animal pointer
 	
 	return (0);
 }
