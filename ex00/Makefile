@@ -2,7 +2,7 @@ NAME = polymorph
 
 CC = c++
 CFLAGS = -std=c++98 -Wall -Wextra -Werror -MMD -g -fsanitize=address
-SRC_FILES = main.cpp Animal.cpp Dog.cpp Cat.cpp
+SRC_FILES = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
 OBJ_DIR = objs/
 OBJ_FILES = $(SRC_FILES:.cpp=.o)
 OBJS = $(addprefix $(OBJ_DIR), $(OBJ_FILES))

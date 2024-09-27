@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 19:23:56 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/10 20:02:18 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/27 22:08:30 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,9 @@ Dog&	Dog::operator=(const Dog &copy)
 	std::cout << "Dog copy assignment operator called" << std::endl;
 	_type = copy._type;
 	return (*this);
+}
+
+void	Dog::makeSound() const
+{
+	std::cout << "WOOOF WOOOOF" << std::endl;
 }

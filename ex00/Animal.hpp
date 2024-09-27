@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:16:48 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/23 19:57:34 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/27 22:43:02 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,13 @@ public:
 	Animal();
 	Animal(std::string type);
 	Animal(Animal& copy);
-	~Animal();
+	virtual ~Animal();
 
 	Animal& operator=(const Animal& src);
 
-	std::string	getType() const;
-	void		setType(std::string type);
-	void		makeSound() const;
+	std::string		getType() const;
+	void			setType(std::string type);
+	virtual void	makeSound() const;
 };
 
 #endif
