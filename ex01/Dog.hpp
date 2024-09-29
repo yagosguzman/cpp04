@@ -17,17 +17,19 @@
 # include "Animal.hpp"
 # include "Brain.hpp"
 
-class Dog : public Animal, public Brain
+class Dog : public Animal
 {
-	private:
-		Brain *_brain;
+private:
+	Brain *_brain;
 
-	public:
-		Dog();
-		Dog(Dog &copy);
-		~Dog();
+public:
+	Dog();
+	Dog(Dog &copy);
+	~Dog();
 
-		Dog& operator=(const Dog& src);
+	Dog& operator=(const Dog& src);
+
+	void	makeSound() const;
 };
 
 #endif

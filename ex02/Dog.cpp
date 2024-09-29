@@ -10,19 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 #include "Dog.hpp"
 #include "Brain.hpp"
 #include <iostream>
 
-Dog::Dog() : Animal()
+Dog::Dog() : AAnimal()
 {
 	std::cout << "Dog default constructor called" << std::endl;
 	setType("Dog");
 	_brain = new Brain;
 }
 
-Dog::Dog(Dog &copy) : Animal()
+Dog::Dog(Dog &copy) : AAnimal()
 {
 	std::cout << "Dog copy constructor called" << std::endl;
 	_type = copy._type;

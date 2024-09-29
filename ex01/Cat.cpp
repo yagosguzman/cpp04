@@ -13,13 +13,14 @@
 #include "Animal.hpp"
 #include "Cat.hpp"
 
-Cat::Cat() : Animal("Cat")
+Cat::Cat() : Animal()
 {
 	std::cout << "Cat default constructor called" << std::endl;
+	setType("Cat");
 	_brain = new Brain;
 }
 
-Cat::Cat(Cat &copy) : Animal("Cat")
+Cat::Cat(Cat &copy) : Animal()
 {
 	std::cout << "Cat copy constructor called" << std::endl;
 	_type = copy._type;
@@ -38,4 +39,9 @@ Cat&	Cat::operator=(const Cat &copy)
 	_type = copy._type;
 	_brain = copy._brain;
 	return (*this);
+}
+
+void	Cat::makeSound() const
+{
+	std::cout << "MEOOOOOWWWW" << std::endl;
 }

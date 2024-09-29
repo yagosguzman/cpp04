@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Brain.hpp                                          :+:      :+:    :+:   */
+/*   Brain.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/10 19:38:10 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/23 19:56:39 by ysanchez         ###   ########.fr       */
+/*   Created: 2024/09/10 19:41:39 by ysanchez          #+#    #+#             */
+/*   Updated: 2024/09/10 19:43:38 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BRAIN_HPP
-# define BRAIN_HPP
+#include "Brain.hpp"
 
-# include <iostream>
-
-class Brain
+Brain::Brain()
 {
-protected:
-	std::string _ideas[100];
+	std::cout << "Brain default constructor called" << std::endl;
+}
 
-public:
-	Brain();
-	Brain(Brain &copy);
-	~Brain();
+Brain::Brain(Brain &copy)
+{
+	std::cout << "Brain copy constructor called" << std::endl;
+	_ideas[100] = copy._ideas[100];
+}
 
-	Brain& operator=(const Brain& src);
-};
-
-#endif
+Brain::~Brain()
+{
+	std::cout << "Brain destructor called" << std::endl;
+}
