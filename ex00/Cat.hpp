@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:27:50 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/27 22:43:20 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/30 19:11:04 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@
 
 class Cat : public Animal
 {
-	public:
-		Cat();
-		Cat(Cat &copy);
-		~Cat();
+public:
+	Cat();
+	Cat(Cat &copy);
+	~Cat();
 
-		Cat& operator=(const Cat& src);
-		void	makeSound() const;
+	Cat& operator=(const Cat& src);
+	void	makeSound() const;
 };
 
 #endif

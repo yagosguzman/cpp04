@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:24:35 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/27 22:52:48 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/30 20:31:58 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,10 @@ int main()
 	std::cout << dog->getType() << " " << std::endl;
 	std::cout << cat->getType() << " " << std::endl;
 	meta->makeSound();
-	isdog->makeSound();
+	isdog->makeSound(); // will print unrecognizable sound because it's an Animal class
 	unknown->makeSound();
-	cat->makeSound(); //will output the cat sound!
 	dog->makeSound();
+	cat->makeSound(); //will output the cat sound!
 
 	delete meta;
 	delete unknown;
@@ -40,20 +40,19 @@ int main()
 	delete dog;
 	delete cat;
 
-	const WrongAnimal* wrong = new WrongAnimal();
+	const WrongAnimal* wanimal = new WrongAnimal();
 	const WrongAnimal* wrongcat = new WrongCat();
 
 	std::cout << "\nWRONG ANIMALS\n" << std::endl;
 	
-	std::cout << wrong->getType() << ": ";
-	wrong->makeSound();
+	std::cout << wanimal->getType() << ": ";
+	wanimal->makeSound();
 	std::cout << "\n" << wrongcat->getType() << ": ";
-	wrongcat->makeSound();
+	wrongcat->makeSound(); // Will print wrong animal because the makeSound function is not virtual
 	std::cout << std::endl;
-	delete wrong;
+	delete wanimal;
 	delete wrongcat;
 	WrongCat badcat;
 	badcat.makeSound(); // Here it will make the Wrong Meow because it's not instantiated as a wrong animal pointer
-	
 	return (0);
 }

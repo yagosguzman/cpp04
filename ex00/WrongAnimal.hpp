@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 22:16:42 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/27 22:19:06 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/30 19:12:59 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ public:
 	WrongAnimal();
 	WrongAnimal(std::string type);
 	WrongAnimal(WrongAnimal& copy);
-	~WrongAnimal();
+	virtual ~WrongAnimal();
 
 	WrongAnimal& operator=(const WrongAnimal& src);
 

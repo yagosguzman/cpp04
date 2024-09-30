@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:25:29 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/27 22:43:15 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/30 19:10:56 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@
 
 class Dog : public Animal
 {
-	public:
-		Dog();
-		Dog(Dog &copy);
-		~Dog();
+public:
+	Dog();
+	Dog(Dog &copy);
+	~Dog();
 
-		Dog& operator=(const Dog& src);
-		void	makeSound() const;
+	Dog& operator=(const Dog& src);
+	void	makeSound() const;
 };
 
 #endif
