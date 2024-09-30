@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:18:52 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/27 22:06:15 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/30 21:19:21 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ Animal::Animal(std::string type)
 		_type = "Unknown";
 	else
 		_type = type;
-	std::cout << "Default Animal constructor called, type is " << _type << std::endl;
+	std::cout << "Animal constructor called, type is " << _type << std::endl;
 }
 
 Animal::Animal(Animal& copy)

@@ -1,7 +1,7 @@
 NAME = onfire
 
 CC = c++
-CFLAGS = -std=c++98 -Wall -Wextra -Werror -MMD -g -fsanitize=address
+CFLAGS = -std=c++98 -Wall -Wextra -Werror -MMD -g #-fsanitize=address
 SRC_FILES = main.cpp Animal.cpp Dog.cpp Cat.cpp Brain.cpp
 OBJ_DIR = objs/
 OBJ_FILES = $(SRC_FILES:.cpp=.o)

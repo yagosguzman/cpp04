@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 19:19:42 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/10 19:58:47 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/30 21:43:09 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,17 @@ Cat&	Cat::operator=(const Cat &copy)
 	return (*this);
 }
 
-void	Cat::makeSound() const
+void		Cat::makeSound() const
 {
 	std::cout << "MEOOOOOWWWW" << std::endl;
+}
+
+void		Cat::writeIdea(std::string thought, int i) const
+{
+	_brain->writeIdea(thought, i);
+}
+
+std::string	Cat::getIdea(int i) const
+{
+	return (_brain->getIdea(i));
 }

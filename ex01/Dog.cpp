@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 19:23:56 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/10 20:02:18 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/30 21:42:47 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,18 @@ Dog&	Dog::operator=(const Dog &copy)
 	return (*this);
 }
 
-void	Dog::makeSound() const
+void		Dog::makeSound() const
 {
 	std::cout << "WOOOF WOOOOF" << std::endl;
 }
+
+void		Dog::writeIdea(std::string thought, int i) const
+{
+	_brain->writeIdea(thought, i);
+}
+
+std::string	Dog::getIdea(int i) const
+{
+	return (_brain->getIdea(i));
+}
+

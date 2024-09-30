@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:18:52 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/27 22:05:31 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/30 21:19:15 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ Animal::Animal(Animal& copy)
 
 Animal::~Animal()
 {
-	std::cout << "Default Animal destructor called" << std::endl;
+	std::cout << "Animal destructor called" << std::endl;
 }
 
 Animal& Animal::operator=(const Animal& src)
