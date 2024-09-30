@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:25:29 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/23 19:55:00 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/30 21:49:35 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,9 @@ public:
 
 	Dog& operator=(const Dog& src);
 
-	void	makeSound() const;
+	void		makeSound() const;
+	void		writeIdea(std::string thought, int i) const;
+	std::string	getIdea(int i) const;
 };
 
 #endif

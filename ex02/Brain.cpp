@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 19:41:39 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/10 19:43:38 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/09/30 21:50:13 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,13 @@ Brain::Brain(Brain &copy)
 Brain::~Brain()
 {
 	std::cout << "Brain destructor called" << std::endl;
+}
+
+void		Brain::writeIdea(std::string thought, int i)
+{
+	_ideas[i] = thought;
+}
+std::string	Brain::getIdea(int i)
+{
+	return (_ideas[i]);
 }
