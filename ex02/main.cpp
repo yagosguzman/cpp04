@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:24:35 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/09/30 21:53:00 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/10/01 18:35:06 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,12 @@ int main()
 
 	const AAnimal* dog = new Dog();
 	const AAnimal* cat = new Cat();
-	// const AAnimal* unknown = new AAnimal(); // We can't use this line cause AAnimal is now an abstract class
 
 	dog->makeSound();
 	cat->makeSound();
-	// unknown->makeSound();
 		
 	delete dog;
 	delete cat;
-	// delete unknown;
 
 	Dog basic;
 
@@ -57,5 +54,9 @@ int main()
 	basic.makeSound();
 	tmp.makeSound();
 	
+	// const AAnimal* unknown = new AAnimal(); // We can't use this line cause AAnimal is now an abstract class
+	// unknown->makeSound();
+	// delete unknown;
+
 	return (0);
 }
