@@ -6,13 +6,15 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 20:26:17 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/10/24 20:26:56 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/10/26 17:32:42 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AMateria.hpp"
 #include "ICharacter.hpp"
+#include "Character.hpp"
 #include "IMateriaSource.hpp"
+#include "MateriaSource.hpp"
 
 int main()
 {
