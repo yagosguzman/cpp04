@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 17:28:56 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/10/26 17:32:28 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/10/28 20:33:51 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ public:
 
 	void		learnMateria(AMateria*);
 	AMateria*	createMateria(std::string const& type);
+	void		printList() const;
 
 };
 
