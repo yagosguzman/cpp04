@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 17:12:05 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/10/28 20:07:32 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/10/29 20:47:10 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class Character : public ICharacter
 private:
 	std::string	_name;
 	AMateria	*_inventory[4];
-	int			_size;
+	int			_deleted;
 
 public:
 	Character();

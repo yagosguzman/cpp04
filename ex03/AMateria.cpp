@@ -6,7 +6,7 @@
 /*   By: ysanchez <ysanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 17:03:05 by ysanchez          #+#    #+#             */
-/*   Updated: 2024/10/28 20:58:56 by ysanchez         ###   ########.fr       */
+/*   Updated: 2024/10/29 20:44:19 by ysanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,5 @@ std::string const& AMateria::getType() const
 void	AMateria::use(ICharacter& target)
 {
 	std::cout << this->getType() << " materia used to the target " << target.getName() << std::endl;
+	(void) target;
 }
